@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #waikuang {
+            width: 1000px;
+            height: 600px;
+            margin: 30px auto;
+        }
+        
+        #likuang {
+            width: 1000px;
+            height: 600px;
+            margin: 30px auto;
+            position: relative;
+        }
+        
+        #xiaoye {
+            width: 90px;
+            height: 65px;
+            background: url(img/1.jpg) no-repeat 0 -150px;
+            position: absolute;
+            animation: move 3s linear 0s infinite;
+        }
+        
+        @-webkit-keyframes move {
+            0% {
+                left: 0px;
+                top: 0px;
+                opacity: 0;
+            }
+            25% {
+                left: 100px;
+                top: 125px;
+                opacity: 0.5;
+            }
+            50% {
+                left: 200px;
+                top: 250px;
+                opacity: 1;
+            }
+            75% {
+                left: 260px;
+                top: 375px;
+                transform: rotate(45deg);
+                opacity: 0.5;
+            }
+            100% {
+                left: 330px;
+                top: 500px;
+                transform: rotate(45deg);
+                opacity: 0;
+            }
+        }
+        
+        #daye {
+            float: left;
+            width: 240px;
+            height: 150px;
+            background: url(img/1.jpg) no-repeat;
+            margin-left: 140px;
+            margin-top: 270px;
+            animation: move1 3s linear 0s;
+        }
+        
+        .dazi {
+            float: left;
+            font-size: 40px;
+            font-weight: bolder;
+            margin-left: 450px;
+            margin-top: -120px;
+        }
+        
+        .xiaozi {
+            float: left;
+            margin-left: 450px;
+            margin-top: -40px;
+        }
+        
+        .dazi1 {
+            float: left;
+            font-size: 40px;
+            font-weight: bolder;
+            margin-left: 140px;
+            margin-top: 230px;
+        }
+        
+        .xiaozi1 {
+            float: left;
+            margin-left: -160px;
+            margin-top: 300px;
+        }
+        
+        #yuan {
+            float: left;
+            width: 137px;
+            height: 137px;
+            background: url(img/1.jpg) no-repeat 0px -482px;
+            margin-top: 200px;
+            margin-left: 290px;
+            animation: xuanzhuan1 1s linear 0s infinite;
+        }
+        
+        #sanjiao {
+            float: left;
+            width: 170px;
+            height: 170px;
+            background: url(img/1.jpg) no-repeat 0px -313px;
+            margin-top: -165px;
+            margin-left: 200px;
+            animation: xuanzhuan2 1.2s linear 0s infinite;
+        }
+        
+        #zhengfang {
+            float: left;
+            width: 96px;
+            height: 96px;
+            background: url(img/1.jpg) no-repeat 0px -215px;
+            margin-top: -97px;
+            margin-left: 700px;
+            animation: xuanzhuan3 1.4s linear 0s infinite;
+        }
+        
+        @-webkit-keyframes xuanzhuan1 {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @-webkit-keyframes xuanzhuan2 {
+            0% {
+                transform: rotate(-360deg);
+            }
+            50% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+        
+        @-webkit-keyframes xuanzhuan3 {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        #dengpao {
+            float: left;
+            width: 191px;
+            height: 266px;
+            background: url(img/1.jpg) no-repeat 0px -620px;
+            margin-top: 150px;
+            margin-left: 190px;
+        }
+        
+        #guang {
+            float: left;
+            width: 340px;
+            height: 257px;
+            background: url(img/1.jpg) no-repeat 0px -886px;
+            margin-top: 80px;
+            margin-left: -266px;
+            animation: faguang 2s linear 0s infinite;
+        }
+        
+        @-webkit-keyframes faguang {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        .dazi2 {
+            float: left;
+            font-size: 40px;
+            font-weight: bolder;
+            margin-left: 140px;
+            margin-top: 230px;
+        }
+        
+        .xiaozi2 {
+            float: left;
+            margin-left: -160px;
+            margin-top: 300px;
+        }
+        
+        .dazi3 {
+            float: left;
+            font-size: 40px;
+            font-weight: bolder;
+            margin-left: 140px;
+            margin-top: 230px;
+        }
+        
+        .xiaozi3 {
+            float: left;
+            margin-left: -160px;
+            margin-top: 300px;
+        }
+        
+        #huojian {
+            float: left;
+            width: 224px;
+            height: 219px;
+            background: url(img/1.jpg) no-repeat -240px 0px;
+            margin-top: 140px;
+            margin-left: 280px;
+            animation: huojian 0.3s linear 0s infinite;
+        }
+        
+        @-webkit-keyframes huojian {
+            0% {
+                margin-top: 140px;
+            }
+            50% {
+                margin-top: 150px;
+            }
+            100% {
+                margin-top: 140px;
+            }
+        }
+        
+        #feng1 {
+            float: left;
+            width: 158px;
+            height: 153px;
+            background: url(img/1.jpg) no-repeat -238px -220px;
+            margin-left: -240px;
+            margin-top: 50px;
+            animation: feng1 0.8s linear 0s infinite;
+        }
+        
+        @-webkit-keyframes feng1 {
+            0% {
+                transform: translateY(0px) translateX(0px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(200px) translateX(-200px);
+                opacity: 0;
+            }
+        }
+        
+        #feng2 {
+            float: left;
+            width: 77px;
+            height: 73px;
+            background: url(img/1.jpg) no-repeat -163px -150px;
+            margin-left: -180px;
+            margin-top: 120px;
+            animation: feng2 0.3s linear 0s infinite;
+        }
+        
+        @-webkit-keyframes feng2 {
+            0% {
+                transform: translateY(0px) translateX(0px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(200px) translateX(-200px);
+                opacity: 0;
+            }
+        }
+        
+        #feng3 {
+            float: left;
+            width: 160px;
+            height: 155px;
+            background: url(img/1.jpg) no-repeat -238px -372px;
+            margin-top: 210px;
+            margin-left: -120px;
+            animation: feng3 0.5s linear 0s infinite;
+        }
+        
+        @-webkit-keyframes feng3 {
+            0% {
+                transform: translateY(0px) translateX(0px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(200px) translateX(-200px);
+                opacity: 0;
+            }
+        }
+        
+        #feng4 {
+            float: left;
+            width: 100px;
+            height: 98px;
+            background: url(img/1.jpg) no-repeat -238px -429px;
+            margin-top: 280px;
+            margin-left: -120px;
+            animation: feng4 0.7s linear 0s infinite;
+        }
+        
+        @-webkit-keyframes feng4 {
+            0% {
+                transform: translateY(0px) translateX(0px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(200px) translateX(-200px);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="waikuang">
+        <div id="likuang">
+            <div id="xiaoye"></div>
+            <div id="daye"></div>
+            <p class="dazi">没有广告，更不会骚扰</p>
+            <p class="xiaozi">无广告，不骚扰，干净、绿色专注于输入本质。</p>
+        </div>
+        <div id="likuang">
+            <p class="dazi1">极致简约</p>
+            <p class="xiaozi1">去除冗余功能，关注核心体验，</br>细节精雕细琢，界面简约清爽。</p>
+            <div id="yuan"></div>
+            <div id="sanjiao"></div>
+            <div id="zhengfang"></div>
+        </div>
+        <div id="likuang">
+            <div id="dengpao"></div>
+            <div id="guang"></div>
+            <p class="dazi2">知你所想</p>
+            <p class="xiaozi2">丰富的词库，精准的预测输入，</br>让您的沟通过程变得更加轻松。</p>
+        </div>
+        <div id="likuang">
+            <p class="dazi3">极速体验</p>
+            <p class="xiaozi3">智能引擎，输入顺滑流畅，</br>让您体验如飞一般的感觉。</p>
+            <div id="huojian"></div>
+            <div id="feng1"></div>
+            <div id="feng2"></div>
+            <div id="feng3"></div>
+            <div id="feng4"></div>
+        </div>
+    </div>
+</body>
+
+</html>
